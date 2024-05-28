@@ -1,0 +1,45 @@
+/*Table*/
+table {
+	border-collapse: collapse;
+}
+
+/*Table Header*/
+table th {
+	padding: 10px;
+}
+
+/*Table Entry*/
+table td {
+	border: 2px solid rgba(194, 150, 225, 0.2);
+	padding: 5px;
+}
+
+/*Ignore Top Edge Border*/
+table tr td,
+table tr:first-child th {
+	border-top: 0;
+}
+
+/*Ignore Bottom Edge Border*/
+table tr:first-child th,
+table tr:last-child td {
+	border-bottom: 0;
+}
+
+/*Ignore Left Edge Border*/
+table tr td:first-child,
+table tr th:first-child {
+	border-left: 0;
+}
+
+/*Ignore Right Edge Border*/
+table tr td:last-child,
+table tr th:last-child {
+	border-right: 0;
+}
+
+/*Table Header*/
+.tableHeader {
+	background-color: rgba(194, 150, 225, 0.2);
+	border-radius: 10px;
+}

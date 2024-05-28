@@ -1,0 +1,16 @@
+/*Limit Width*/
+.embed,
+.info:has(> .embed) {
+	width: 100%;
+	overflow: hidden;
+}
+
+/*Remove Border*/
+.embed {
+	border: none;
+}
+
+/*Aspect Ratio*/
+.youtube {
+	aspect-ratio: 16/9;
+}

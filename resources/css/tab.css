@@ -1,0 +1,39 @@
+/*Tabs*/
+.tabNames {
+	display: flex;
+}
+
+/*Inactive Tab Label*/
+.tabName {
+	display: inline-block;
+	width: 100%;
+	padding: 5px;
+	border: 4px solid rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+/*Tab Label Hover*/
+.tabName:hover {
+	border-bottom: 4px solid rgba(194, 150, 225, 0.7);
+}
+
+/*Active Tab Label*/
+.tabName.active {
+	border-bottom: 4px solid rgb(194, 150, 225);
+}
+
+/*Inactive TabContent*/
+.tab {
+	display: none;
+}
+
+/*Active Tab Content*/
+.tab.active {
+	display: block;
+}
+
+/*Limit Width*/
+.info:has(> .tabContent) {
+	width: 100%;
+	aspect-ratio: 2;
+}
