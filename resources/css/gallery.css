@@ -1,0 +1,57 @@
+/*Image Preview*/
+#preview {
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	/*Make Transparent Images Opaque*/
+	background-color: white;
+}
+
+/* Thumbnails*/
+.thumbnails {
+	text-align: center;
+	padding-top: 5px;
+	border-top: 2px solid rgb(194, 150, 225);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/*Thumbnail*/
+.thumbnail {
+	display: inline;
+	opacity: 0.4;
+}
+
+/*Thumbnail Image*/
+.thumbnail img {
+	width: 15%;
+	aspect-ratio: 1;
+	border: 2px solid rgb(194, 150, 225);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/*Thumbnail Image Hover*/
+.thumbnail:hover {
+	opacity: 0.7;
+}
+
+/*Thumbnail Active Image*/
+.thumbnail.active {
+	opacity: 1;
+}
+
+/*Image Center Vertically*/
+@supports(object-fit: cover) {
+	.thumbnail img {
+		object-fit: cover;
+		object-position: center center;
+	}
+
+	/*Shrink to Fit*/
+	#preview {
+		object-fit: contain;
+	}
+}

@@ -35,5 +35,4 @@
 /*Limit Width*/
 .info:has(> .tabContent) {
 	width: 100%;
-	aspect-ratio: 2;
 }
