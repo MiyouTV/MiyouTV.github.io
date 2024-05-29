@@ -5,11 +5,15 @@ button {
 	border-radius: 10px;
 	font: inherit;
 	padding: 10px;
-	text-decoration: none;
 	cursor: pointer;
 	-webkit-box-shadow: 0px 0px 2px 2px rgba(194, 150, 225, 0.2);
 	-moz-box-shadow: 0px 0px 2px 2px rgba(194, 150, 225, 0.2);
 	box-shadow: 0px 0px 2px 2px rgba(194, 150, 225, 0.2);
+}
+
+/*Remove Underline from Buttons w/ Links*/
+a:has(> button) {
+	text-decoration: none;
 }
 
 /*Button Hover*/
@@ -21,7 +25,7 @@ button:hover {
 .boxEntry {
 	display: block;
 	position: relative;
-	padding-left: 35px;
+	padding-left: 2rem;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -42,26 +46,20 @@ input[type="radio"] {
 	width: 0;
 }
 
-/*Create Custom Checkbox*/
-.checkmark {
+/*Create Custom Checkbox/RadioBox*/
+.checkmark,
+.radiomark {
 	position: absolute;
-	top: 0;
+	top: .09rem;
 	left: 0;
-	width: 18px;
-	border: 1px solid rgb(194, 150, 225);
+	width: 1rem;
+	border: 0.05rem solid rgb(194, 150, 225);
 	aspect-ratio: 1;
 	background-color: rgb(49, 34, 62);
 }
 
-/*Create Custom Radiobox*/
+/*Make Radio Round*/
 .radiomark {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 18px;
-	border: 1px solid rgb(194, 150, 225);
-	aspect-ratio: 1;
-	background-color: rgb(49, 34, 62);
 	border-radius: 50%;
 }
 
@@ -94,12 +92,12 @@ input:checked~.radiomark:after {
 
 /*Style the Checkmark*/
 .checkmark:after {
-	left: 5px;
-	top: 0px;
-	width: 5px;
-	height: 10px;
+	left: 0.25rem;
+	top: -0.1rem;
+	width: 0.3rem;
+	height: 0.8rem;
 	border: solid white;
-	border-width: 0 3px 3px 0;
+	border-width: 0 0.2rem 0.2rem 0;
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
@@ -127,17 +125,24 @@ input[type="range"]:focus {
 /* Slider Track */
 input[type="range"]::-webkit-slider-runnable-track {
 	background-color: rgb(49, 34, 62);
-	border: 1px solid rgb(194, 150, 225);
+	border: 0.05rem solid rgb(194, 150, 225);
 	border-radius: 10px;
-	height: 10px;
+	height: 0.4rem;
 }
 
 /* Slider Thumb */
 input[type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
-	margin-top: -8px;
+	margin-top: -0.4rem;
 	background-color: rgb(194, 150, 225);
-	height: 24px;
-	width: 5px;
+	height: 1.1rem;
+	width: 0.4rem;
+}
+
+/*Mobile View for Smaller Browser Widths*/
+@media (max-width:1000px) {
+	button {
+		width: 100%;
+	}
 }
