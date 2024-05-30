@@ -43,12 +43,21 @@ img {
 	font-weight: normal;
 }
 
+/*Title Link*/
+.header1 a {
+	text-decoration: none;
+}
+
 /*Info Section Header*/
 .header2 {
 	font-weight: normal;
 	padding-bottom: 0.2rem;
+	margin-bottom: 0.5rem;
+}
+
+/*Info Section Header*/
+.info h2.header2 {
 	border-bottom: 0.15rem solid rgb(194, 150, 225);
-	margin-bottom:0.5rem;
 }
 
 /*Rounded Header Border*/

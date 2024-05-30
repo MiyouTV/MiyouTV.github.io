@@ -4,6 +4,8 @@
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 	/*Make Transparent Images Opaque*/
 	background-color: white;
 }
@@ -11,8 +13,6 @@
 /* Thumbnails*/
 .thumbnails {
 	padding-top: 5px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
 }
 
 /*Thumbnail*/
@@ -25,6 +25,7 @@
 .thumbnail img {
 	width: 15%;
 	aspect-ratio: 1;
+	border-radius: 10px;
 	border: 0.1rem solid rgb(194, 150, 225);
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
