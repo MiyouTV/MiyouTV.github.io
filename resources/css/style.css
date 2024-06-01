@@ -80,7 +80,7 @@ h2.header1 {
 	border: 0.1rem solid rgb(194, 150, 225);
 	border-radius: 10px;
 	padding: 10px;
-	max-width: clamp(60vh, 40vw, 40vw);
+	max-width: clamp(40vh, 40vw, 40vw);
 	overflow: auto;
 	margin-top: 0;
 }
@@ -90,8 +90,9 @@ h2.header1 {
 	display: none;
 }
 
-/*Hide Info Border for Links on Desktop View*/
 @media (min-width:1000px) {
+
+	/*Hide Info Border for Links on Desktop View*/
 	.info:has(> .links) {
 		border: none;
 	}
@@ -115,6 +116,11 @@ h2.header1 {
 /*Limit Height*/
 .info:has(> .scroll) {
 	aspect-ratio: 2;
+}
+
+/*Light Background*/
+.softLight {
+	background-color: rgba(194, 150, 225, 0.2);
 }
 
 /*Light Background*/

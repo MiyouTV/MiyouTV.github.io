@@ -1,0 +1,86 @@
+/*Shortcuts*/
+.info:has(> .shortcuts) {
+	position: fixed;
+	margin-top: 0.25rem;
+	right: calc(50vw - 11rem - clamp(20vh, 20vw, 20vw));
+	z-index: 999999;
+}
+
+@media (max-width:1000px) {
+
+	/*Hide Shortcuts on Smaller Widths*/
+	.info:has(> .shortcuts) {
+		display: none;
+	}
+}
+
+/*Profile Pic & Image on Left*/
+.container:has(> .info #profile) {
+	position: absolute;
+	left: calc(50vw - 22rem - clamp(20vh, 20vw, 20vw));
+	flex-direction: column;
+}
+
+/*Profile Pic*/
+#profile {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	/*Make Transparent Images Opaque*/
+	background-color: rgb(194, 150, 225);
+	width: 100%;
+}
+
+/*Set Profile Info Width*/
+.info:has(> #profile),
+.info:has(> #basicInfo),
+.info:has(> #manorInfo) {
+	width: 18rem;
+}
+
+/*Enable Scrollbar for Long Info Descriptions*/
+.info:has(> #basicInfo),
+.info:has(> #basicInfo) {
+	overflow: auto;
+}
+
+/*Set Max Width for All Centered Info*/
+.info:not(:has(> #profile)):not(:has(.shortcuts)):not(:has(#basicInfo)):not(:has(#manorInfo)) {
+	width: 100%;
+}
+
+@media (max-width:1200px) {
+
+	/*Wrap to Single Column on Smaller Widths*/
+	.container:has(> .info #profile) {
+		position: relative;
+		left: 0;
+	}
+
+	/*Fill Space*/
+	.info:has(> #profile),
+	.info:has(> #basicInfo),
+	.info:has(> #manorInfo) {
+		width: 100%;
+	}
+}
+
+@media (max-width:1000px) {
+
+	/*Fix Flex Direction on Smallest Width*/
+	.container:has(> .info #profile) {
+		flex-direction: row;
+	}
+}
+
+
+/*Image Center Vertically*/
+@supports(object-fit: contain) {
+
+	/*Shrink to Fit*/
+	.info #profile {
+		object-fit: contain;
+	}
+}

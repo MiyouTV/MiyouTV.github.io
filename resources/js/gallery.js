@@ -1,19 +1,19 @@
-const images = document.querySelectorAll('.thumbnail img');
+const thumbnails = document.querySelectorAll('.thumbnail img');
 const preview = document.querySelector('#preview');
 
-function setPreview(image) {
-	preview.src = image.src;
-	images.forEach((img) => {
-		if (image === img) {
+function setPreview(thumbnail) {
+	preview.src = thumbnail.src;
+	thumbnails.forEach((img) => {
+		if (thumbnail === img) {
 			img.parentElement.classList.add('active');
 		} else
 			img.parentElement.classList.remove('active');
 	});
 }
 
-images.forEach((image) => {
-	image.onclick = function() {
-		setPreview(image);
+thumbnails.forEach((thumbnail) => {
+	thumbnail.onclick = function() {
+		setPreview(thumbnail);
 	};
 });
 

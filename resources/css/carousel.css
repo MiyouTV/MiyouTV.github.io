@@ -40,8 +40,9 @@
 	opacity: 1;
 }
 
-/*Carousel Center Vertically*/
 @supports(object-fit: cover) {
+
+	/*Carousel Center Vertically*/
 	.carousel img {
 		height: 100%;
 		object-fit: cover;
