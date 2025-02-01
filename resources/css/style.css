@@ -83,6 +83,7 @@ h2.header1 {
 	max-width: clamp(40vh, 40vw, 40vw);
 	overflow: auto;
 	margin-top: 0;
+	box-shadow: 0 0 5px rgb(194, 150, 225);
 }
 
 /*Hide Header for Links on Desktop View*/
