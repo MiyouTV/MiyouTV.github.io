@@ -10,7 +10,7 @@
 	background-color: rgb(194, 150, 225);
 }
 
-/* Thumbnails*/
+/*Thumbnails*/
 .thumbnails {
 	display: flex;
 	flex-wrap: wrap;

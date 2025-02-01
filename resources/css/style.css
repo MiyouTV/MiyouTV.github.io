@@ -17,6 +17,58 @@ u {
 	text-decoration-color: rgb(194, 150, 225);
 }
 
+/*Shortcuts*/
+.info:has(> .shortcuts) {
+	position: fixed;
+	margin-top: 0.25rem;
+	right: calc(50vw - 11rem - clamp(20vh, 20vw, 20vw));
+	z-index: 999999;
+}
+
+/*Info Link Decoration*/
+.info a {
+	position: relative;
+	text-decoration: none;
+}
+
+/*Info Link Colors*/
+.info a {
+	color: rgb(194, 150, 225)
+}
+
+/*Animation for Links*/
+.info a:not(:has(> img))::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: #ffffff;
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+	transform-origin: top left;
+}
+
+/*Animation for Links*/
+.info a:hover::before {
+	transform: scaleX(1);
+}
+
+/*Hide Header for Links on Desktop View*/
+.links {
+	display: none;
+}
+
+/*Hide Box Shadow on Button Links*/
+.info:has(> .links) {
+	box-shadow: none;
+}
+
+.info:has(>.links) a::before {
+	background: none;
+}
 
 /*Disable Dragging Images*/
 img {
@@ -84,11 +136,6 @@ h2.header1 {
 	overflow: auto;
 	margin-top: 0;
 	box-shadow: 0 0 5px rgb(194, 150, 225);
-}
-
-/*Hide Header for Links on Desktop View*/
-.links {
-	display: none;
 }
 
 @media (min-width:1000px) {
