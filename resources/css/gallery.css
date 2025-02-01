@@ -12,18 +12,20 @@
 
 /* Thumbnails*/
 .thumbnails {
-	padding-top: 5px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 /*Thumbnail*/
 .thumbnail {
 	display: inline;
 	opacity: 0.4;
+	max-width: 19.5%;
 }
 
 /*Thumbnail Image*/
 .thumbnail img {
-	width: 15%;
+	width: 100%;
 	aspect-ratio: 1;
 	border-radius: 10px;
 	border: 0.1rem solid rgb(194, 150, 225);

@@ -9,6 +9,9 @@ function setPreview(thumbnail) {
 		} else
 			img.parentElement.classList.remove('active');
 	});
+
+	// TODO - This only works if #media anchor point is set.
+	window.location.href = "#media";
 }
 
 thumbnails.forEach((thumbnail) => {
