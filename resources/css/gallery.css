@@ -37,7 +37,8 @@
 
 /*Thumbnail Description*/
 .thumbnail .description {
-	border-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 	padding: 5px;
 	position: absolute;
 	bottom: -1rem;
@@ -45,21 +46,19 @@
 	right: 0;
 	background: rgb(194, 150, 225);
 	color: #fff;
-	visibility: hidden;
 	opacity: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	/*Transition effect*/
-	transition: opacity .2s, visibility .2s;
+	transition: all .2s;
 }
 
 /*Description Hover*/
 .thumbnail:hover .description {
 	transition: .2s;
-	transform: translateY(-1.2rem);
+	transform: translateY(-1.25rem);
 	opacity: 1;
-	visibility: visible;
 }
 
 /*Thumbnail Image Hover*/

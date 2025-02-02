@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="/resources/css/tab.css" />
 	<link rel="stylesheet" href="/resources/css/input.css" />
 	<link rel="stylesheet" href="/resources/css/gallery.css" />
+	<script src="/resources/js/brokenImage.js"></script>
+	<script src="/resources/js/tab.js" defer></script>
 	<title>Manor Wiki - Characters</title>
 </head>
 
@@ -26,21 +28,31 @@
 					<div class="thumbnails">
 						<div class="thumbnail">
 							<a href="characters/residents/yumi.html">
-								<img src="/resources/images/characters/residents/yumi/profile.png">
+								<img src="/resources/images/characters/residents/yumi/profile.png"
+									onerror="brokenImage(this)">
 								<p class="description">Yumi</p>
 							</a>
 						</div>
 						<div class="thumbnail disabled">
 							<a href="characters/residents/megumu.html">
-								<img src="/resources/images/characters/residents/megumu/profile.png"></a>
+								<img src="/resources/images/characters/residents/megumu/profile.png"
+									onerror="brokenImage(this)">
+								<p class="description">Megu</p>
+							</a>
 						</div>
 						<div class="thumbnail disabled">
 							<a href="characters/residents/twig.html">
-								<img src="/resources/images/characters/residents/twig/profile.png"></a>
+								<img src="/resources/images/characters/residents/twig/profile.png"
+									onerror="brokenImage(this)">
+								<p class="description">Twig</p>
+							</a>
 						</div>
 						<div class="thumbnail disabled">
 							<a href="characters/residents/senki.html">
-								<img src="/resources/images/characters/residents/senki/profile.png"></a>
+								<img src="/resources/images/characters/residents/senki/profile.png"
+									onerror="brokenImage(this)">
+								<p class="description">Senki</p>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -49,15 +61,24 @@
 					<div class="thumbnails">
 						<div class="thumbnail disabled">
 							<a href="characters/spirits/guardian.html">
-								<img src="/resources/images/characters/spirits/guardian/profile.png"></a>
+								<img src="/resources/images/characters/spirits/guardian/profile.png"
+									onerror="brokenImage(this)">
+								<p class="description">Guardian</p>
+							</a>
 						</div>
 						<div class="thumbnail">
 							<a href="characters/spirits/chippy.html">
-								<img src="/resources/images/characters/spirits/chippy/profile.png"></a>
+								<img src="/resources/images/characters/spirits/chippy/profile.png"
+									onerror="brokenImage(this)">
+								<p class="description">Chippy</p>
+							</a>
 						</div>
 						<div class="thumbnail">
 							<a href="characters/spirits/flabber.html">
-								<img src="/resources/images/characters/spirits/flabber/profile.png"></a>
+								<img src="/resources/images/characters/spirits/flabber/profile.png"
+									onerror="brokenImage(this)">
+								<p class="description">Flabber</p>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -69,8 +90,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="/resources/js/tab.js"></script>
-	<script src="/resources/js/brokenImage.js"></script>
 </body>
 
 </html>

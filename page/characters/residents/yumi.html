@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="/resources/css/bio.css" />
 	<link rel="stylesheet" href="/resources/css/gallery.css" />
 	<link rel="stylesheet" href="/resources/css/embed.css" />
+	<script src="/resources/js/brokenImage.js"></script>
+	<script src="/resources/js/tab.js" defer></script>
+	<script src="/resources/js/gallery.js" defer></script>
 	<title>Manor Wiki - Yumi</title>
 </head>
 
@@ -27,7 +30,7 @@
 	<div class="container">
 		<div class="info">
 			<h2 class="header1">Yumi</h2>
-			<img src="/resources/images/characters/residents/yumi/profile.png" id="profile">
+			<img src="/resources/images/characters/residents/yumi/profile.png" id="profile" onerror="brokenImage(this)">
 		</div>
 		<div class="info softLight">
 			<h2 class="header2" id="basicInfo">Basic Info</h2>
@@ -386,37 +389,37 @@
 	<div class="container">
 		<div class="info">
 			<h2 class="header1" id="media">Media</h2>
-			<img src="" id="preview" class="dark">
+			<img src="" id="preview" class="dark" onerror="brokenImage(this)">
 			<div class="thumbnails">
 				<div class="thumbnail">
-					<img src="/resources/images/characters/residents/yumi/1.jpg">
+					<img src="/resources/images/characters/residents/yumi/1.jpg" onerror="brokenImage(this)">
 				</div>
 				<div class="thumbnail">
-					<img src="/resources/images/characters/residents/yumi/2.jpg">
+					<img src="/resources/images/characters/residents/yumi/2.jpg" onerror="brokenImage(this)">
 				</div>
 				<div class="thumbnail">
-					<img src="/resources/images/characters/residents/yumi/3.jpg">
+					<img src="/resources/images/characters/residents/yumi/3.jpg" onerror="brokenImage(this)">
 				</div>
 				<div class="thumbnail">
-					<img src="/resources/images/characters/residents/yumi/4.jpg">
+					<img src="/resources/images/characters/residents/yumi/4.jpg" onerror="brokenImage(this)">
 				</div>
 				<div class="thumbnail">
-					<img src="/resources/images/characters/residents/yumi/5.jpg">
+					<img src="/resources/images/characters/residents/yumi/5.jpg" onerror="brokenImage(this)">
 				</div>
 				<div class="thumbnail">
-					<img src="/resources/images/characters/residents/yumi/6.jpg">
+					<img src="/resources/images/characters/residents/yumi/6.jpg" onerror="brokenImage(this)">
 				</div>
 				<div class="thumbnail">
-					<img src="/resources/images/characters/residents/yumi/7.jpg">
+					<img src="/resources/images/characters/residents/yumi/7.jpg" onerror="brokenImage(this)">
 				</div>
 				<div class="thumbnail">
-					<img src="/resources/images/characters/residents/yumi/8.jpg">
+					<img src="/resources/images/characters/residents/yumi/8.jpg" onerror="brokenImage(this)">
 				</div>
 				<div class="thumbnail">
-					<img src="/resources/images/characters/residents/yumi/9.jpg">
+					<img src="/resources/images/characters/residents/yumi/9.jpg" onerror="brokenImage(this)">
 				</div>
 				<div class="thumbnail">
-					<img src="/resources/images/characters/residents/yumi/10.jpg">
+					<img src="/resources/images/characters/residents/yumi/10.jpg" onerror="brokenImage(this)">
 				</div>
 			</div>
 		</div>
@@ -427,13 +430,10 @@
 			<h2 class="header1" id="playlist">Playlist</h2>
 			<iframe class="spotify"
 				src="https://open.spotify.com/embed/playlist/5GZvUUm8JaKuxHV525adzf?utm_source=generator"
-				frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-				loading="lazy"></iframe>
+				frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+			</iframe>
 		</div>
 	</div>
-	<script src="/resources/js/gallery.js"></script>
-	<script src="/resources/js/tab.js"></script>
-	<script src="/resources/js/brokenImage.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="/resources/css/style.css" />
 	<link rel="stylesheet" href="/resources/css/input.css" />
 	<link rel="stylesheet" href="/resources/css/gallery.css" />
+	<script src="/resources/js/brokenImage.js"></script>
+	<script src="/resources/js/gallery.js" defer></script>
 	<title>Manor Wiki - Gallery</title>
 </head>
 
@@ -14,16 +16,10 @@
 	<div class="container">
 		<div class="info">
 			<h2 class="header1">Gallery</h2>
-			<img src="" id="preview" class="dark">
-			<div class="thumbnails">
-				<div class="thumbnail">
-					<img>
-				</div>
-			</div>
+			<img src="" id="preview" class="dark" onerror="brokenImage(this)">
+			<div class="thumbnails"></div>
 		</div>
 	</div>
-	<script src="/resources/js/gallery.js"></script>
-	<script src="/resources/js/brokenImage.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="/resources/css/input.css" />
 	<link rel="stylesheet" href="/resources/css/table.css" />
 	<link rel="stylesheet" href="/resources/css/embed.css" />
+	<script src="/resources/js/brokenImage.js"></script>
+	<script src="/resources/js/tab.js" async></script>
+	<script src="/resources/js/carousel.js" defer></script>
 	<title>Manor Wiki - Home</title>
 </head>
 
@@ -41,11 +44,11 @@
 					<div class="indicator solidDark"></div>
 					<div class="indicator solidDark"></div>
 				</div>
-				<img src="/resources/images/carousel/1.jpg">
-				<img src="/resources/images/carousel/2.jpg">
-				<img src="/resources/images/carousel/3.jpg">
-				<img src="/resources/images/carousel/4.jpg">
-				<img src="/resources/images/carousel/5.jpg">
+				<img src="/resources/images/carousel/1.jpg" onerror="brokenImage(this)">
+				<img src="/resources/images/carousel/2.jpg" onerror="brokenImage(this)">
+				<img src="/resources/images/carousel/3.jpg" onerror="brokenImage(this)">
+				<img src="/resources/images/carousel/4.jpg" onerror="brokenImage(this)">
+				<img src="/resources/images/carousel/5.jpg" onerror="brokenImage(this)">
 			</div>
 		</div>
 	</div>
@@ -155,9 +158,6 @@
 			</table>
 		</div>
 	</div>
-	<script src="/resources/js/carousel.js"></script>
-	<script src="/resources/js/tab.js"></script>
-	<script src="/resources/js/brokenImage.js"></script>
 </body>
 
 </html>

@@ -27,5 +27,7 @@ tabNames.forEach((tab) => {
 });
 
 // Sets First Element as Active
-document.querySelector('.tabName').classList.add('active');
-document.querySelector('.tab').classList.add('active');
+if (tabNames) {
+	document.querySelector('.tabName').classList.add('active');
+	document.querySelector('.tab').classList.add('active');
+}
