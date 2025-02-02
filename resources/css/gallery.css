@@ -44,6 +44,12 @@
 	opacity: 1;
 }
 
+/*Thumbnail Disabled*/
+.thumbnail.disabled {
+	filter: grayscale(100%);
+	pointer-events: none;
+}
+
 /*Image Center Vertically*/
 @supports(object-fit: cover) {
 	.thumbnail img {
