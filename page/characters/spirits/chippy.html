@@ -5,16 +5,54 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 	<link rel="stylesheet" href="/resources/css/style.css" />
 	<link rel="stylesheet" href="/resources/css/input.css" />
+	<link rel="stylesheet" href="/resources/css/tab.css" />
+	<link rel="stylesheet" href="/resources/css/bio.css" />
+	<link rel="stylesheet" href="/resources/css/gallery.css" />
+	<link rel="stylesheet" href="/resources/css/embed.css" />
 	<script src="/resources/js/brokenImage.js"></script>
-	<title>Manor Wiki - Guardian</title>
+	<script src="/resources/js/tab.js" defer></script>
+	<script src="/resources/js/gallery.js" defer></script>
+	<title>Manor Wiki - Chippy</title>
 </head>
 
 <body>
 	<h1 class="header1"><a href="/">MANOR WIKI</a></h1>
+	<div class="info softLight">
+		<h2 class="header2 shortcuts">Shortcuts</h2>
+		<p>‣ <a href="#description">Description</a></p>
+		<p>‣ <a href="#media">Media</a></p>
+	</div>
 	<div class="container">
 		<div class="info">
-			<h2 class="header1">Oops!</h2>
-			<p>This entity has yet to be identified.</p>
+			<h2 class="header1">Chippy</h2>
+			<img src="/resources/images/characters/spirits/chippy/profile.png" id="profile" onerror="brokenImage(this)">
+		</div>
+		<div class="info softLight">
+			<h2 class="header2" id="basicInfo">Basic Info</h2>
+			<p><b>Level:</b> 1</p>
+			<p><b>HP:</b> 10</p>
+			<p><b>EXP:</b> 25</p>
+			<p><b>GP:</b> 14</p>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<div class="info softLight">
+			<h2 class="header2" id="description">Description</h2>
+			<p>
+				Not much is known about the entity at this time.
+			</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="info">
+			<h2 class="header1" id="media">Media</h2>
+			<img src="" id="preview" class="dark" onerror="brokenImage(this)">
+			<div class="thumbnails">
+				<div class="thumbnail">
+					<img src="/resources/images/characters/spirits/chippy/1.jpg" onerror="brokenImage(this)">
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
