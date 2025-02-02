@@ -14,6 +14,7 @@
 .thumbnails {
 	display: flex;
 	flex-wrap: wrap;
+	overflow: hidden;
 }
 
 /*Thumbnail*/
@@ -32,6 +33,33 @@
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+}
+
+/*Thumbnail Description*/
+.thumbnail .description {
+	box-shadow: 0 0 5px rgba(0,0,0,0);
+	padding: 5px;
+	position: absolute;
+	bottom: -1rem;
+	left: 0;
+	right: 0;
+	background: rgb(194, 150, 225);
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*Transition effect*/
+	transition: opacity .2s, visibility .2s;
+}
+
+/*Description Hover*/
+.thumbnail:hover .description {
+	transition: .2s;
+	transform: translateY(-1.2rem);
+	opacity: 1;
+	visibility: visible;
 }
 
 /*Thumbnail Image Hover*/
