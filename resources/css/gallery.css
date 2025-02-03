@@ -47,11 +47,20 @@
 	background: rgb(194, 150, 225);
 	color: #fff;
 	opacity: 0;
-	display: flex;
+	/*display: flex;
 	align-items: center;
 	justify-content: center;
+	*/
 	/*Transition effect*/
 	transition: all .2s;
+}
+
+/*Description Text Wrapping*/
+.description {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: break-spaces;
+	text-align: center;
 }
 
 /*Description Hover*/
