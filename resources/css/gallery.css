@@ -80,10 +80,26 @@
 	opacity: 1;
 }
 
-/*Thumbnail Disabled*/
+/* Disabled Image Style */
 .thumbnail.disabled {
 	filter: grayscale(100%);
+	pointer-events: auto;
+}
+
+/* Disable Clicking Disabled Link */
+.thumbnail.disabled a {
 	pointer-events: none;
+}
+
+/* Prevent Hover Highlight Effect */
+.thumbnail.disabled:hover {
+	opacity: 0.4;
+}
+
+/* Show Description on Hover */
+.thumbnail.disabled:hover .description {
+	transform: translateY(-1.25rem);
+	opacity: 1;
 }
 
 /*Image Center Vertically*/
