@@ -17,9 +17,15 @@ u {
 	text-decoration-color: rgb(194, 150, 225);
 }
 
-/*List*/
+/*Unordered List*/
 ul {
 	list-style-type: none;
+	padding: 0 0 0 0;
+}
+
+/*Ordered List*/
+ol {
+	padding: 0 0 0 1rem;
 }
 
 /*List Entry*/
@@ -71,13 +77,31 @@ ul li::before {
 	display: none;
 }
 
-/*Hide Box Shadow on Button Links*/
-.info:has(> .links) {
-	box-shadow: none;
-}
-
 .info:has(>.links) a::before {
 	background: none;
+}
+
+/*Hide Info Border for Links on Desktop View*/
+@media (min-width:1000px) {
+	.info:has(> .links) {
+		box-shadow: none;
+		border: none;
+	}
+}
+
+@media (max-width:1000px) {
+	.links {
+		display: block;
+	}
+
+	html {
+		font-size: clamp(1rem, 2rem, 3rem);
+	}
+
+	.info {
+		width: 100%;
+		max-width: 100vw;
+	}
 }
 
 /*Disable Dragging Images*/
@@ -124,8 +148,8 @@ img {
 
 /*Rounded Header Border*/
 h2.header1 {
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
 	border-bottom: none;
 }
 
@@ -133,42 +157,19 @@ h2.header1 {
 .container {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 5px;
+	padding: 0.5rem;
 	gap: 0.4rem;
 }
 
 /*Creates Rounded Border*/
 .info {
 	border: 0.1rem solid rgb(194, 150, 225);
-	border-radius: 10px;
-	padding: 10px;
+	border-radius: 0.7rem;
+	padding: 0.7rem;
 	max-width: clamp(40vh, 40vw, 40vw);
 	overflow: auto;
 	margin-top: 0;
-	box-shadow: 0 0 5px rgb(194, 150, 225);
-}
-
-@media (min-width:1000px) {
-
-	/*Hide Info Border for Links on Desktop View*/
-	.info:has(> .links) {
-		border: none;
-	}
-}
-
-@media (max-width:1000px) {
-	.links {
-		display: block;
-	}
-
-	html {
-		font-size: clamp(1rem, 2rem, 3rem);
-	}
-
-	.info {
-		width: 100%;
-		max-width: 100vw;
-	}
+	box-shadow: 0 0 0.35rem rgb(194, 150, 225);
 }
 
 /*Limit Height*/
@@ -204,10 +205,10 @@ h2.header1 {
 /*Scrollbar*/
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-corner {
-	width: 12px;
-	height: 12px;
+	width: 0.8rem;
+	height: 0.8rem;
 	background: rgb(49, 34, 62);
-	border-radius: 10px;
+	border-radius: 1rem;
 }
 
 /*Scrollbar Track (Can't Add Radius)*/
@@ -219,5 +220,5 @@ h2.header1 {
 ::-webkit-scrollbar-thumb,
 ::-webkit-resizer {
 	background-color: rgb(194, 150, 225);
-	border-radius: 10px;
+	border-radius: 1rem;
 }
