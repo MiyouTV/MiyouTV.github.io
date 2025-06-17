@@ -17,6 +17,16 @@ u {
 	text-decoration-color: rgb(194, 150, 225);
 }
 
+/*List*/
+ul {
+	list-style-type: none;
+}
+
+/*List Entry*/
+ul li::before {
+	content: "◆ ";
+}
+
 /*Shortcuts*/
 .info:has(> .shortcuts) {
 	position: fixed;
