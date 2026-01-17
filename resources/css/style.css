@@ -61,6 +61,11 @@ ol {
 	font-weight: normal;
 }
 
+/* Blur Title Banner Background */
+h1:has(.title) {
+	backdrop-filter: blur(0.5rem);
+}
+
 /*Title Link*/
 .header1 a {
 	text-decoration: none;
@@ -155,6 +160,7 @@ h2.header1 {
 	overflow: auto;
 	margin-top: 0;
 	box-shadow: 0 0 5px rgb(194, 150, 225);
+	backdrop-filter: blur(0.5rem);
 }
 
 /*Shortcuts*/
@@ -196,9 +202,10 @@ h2.header1 {
 	transform: scaleX(1);
 }
 
-/*Hide Box Shadow on Button Links*/
+/*Hide Box Shadow & Blur on Button Links*/
 .info:has(> .links) {
 	box-shadow: none;
+	backdrop-filter: blur(0);
 }
 
 .info:has(>.links) a::before {
