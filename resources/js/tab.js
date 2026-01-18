@@ -19,7 +19,7 @@ tabNames.forEach((tab) => {
 		tabNames.forEach((currentTab) => {
 			currentTab.classList.remove('active');
 		});
-		openTab(document.querySelector("#" + tab.textContent), tab);
+		openTab(document.querySelector("#" + tab.textContent.replace(/\s+/g, '')), tab);
 
 		// Sets Active Tab Name
 		tab.classList.add('active');
