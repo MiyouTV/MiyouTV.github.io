@@ -107,7 +107,7 @@ h2.header1 {
 
 /*Dark Background*/
 .dark {
-	background-color: rgb(49, 34, 62, 0.5);
+	background-color: rgba(49, 34, 62, 0.5);
 }
 
 /*Light Background*/
