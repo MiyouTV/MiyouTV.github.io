@@ -161,6 +161,15 @@ h2.header1 {
 	margin-top: 0;
 	box-shadow: 0 0 5px rgb(194, 150, 225);
 	backdrop-filter: blur(0.5rem);
+	/* Initial Hidden State */
+	opacity: 0;
+	transition: opacity 2s ease;
+	will-change: opacity;
+}
+
+/* Info Visible State */
+.info.is-visible {
+	opacity: 1;
 }
 
 /*Shortcuts*/
